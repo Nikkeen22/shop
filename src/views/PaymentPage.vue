@@ -79,7 +79,7 @@ const goHomeWithToggle = () => {
       class="btn-confirm"
       @click.native.prevent="goHomeWithToggle"
     >
-      На головну
+      На головну!
     </RouterLink>
 
     <p v-if="message" class="message">{{ message }}</p>
