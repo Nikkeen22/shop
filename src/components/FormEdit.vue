@@ -24,7 +24,7 @@ const toggleForm = () => {
 
 const updateItem = async () => {
   try {
-    await axios.put(`http://127.0.0.1:8000/api/edit-item/${props.slug}`, {
+    await axios.put(`https://my-unique-shop-backend-c2411867a870.herokuapp.com/api/edit-item/${props.slug}`, {
       title: title.value,
       price: price.value,
       image: image.value
