@@ -25,7 +25,7 @@ const sendInvoice = async () => {
   message.value = ''
 
   try {
-    await axios.post('http://127.0.0.1:8000/api/payment-await/', {
+    await axios.post('https://my-unique-shop-backend-c2411867a870.herokuapp.com/api/payment-await/', {
       email: email.value,
     })
     message.value = 'Чек надіслано. Очікуйте підтвердження оплати.'
