@@ -36,7 +36,7 @@ export default {
     },
     async mounted() {
         try {
-            const res = await axios.get('http://127.0.0.1:8000/api/items/?format=json')
+            const res = await axios.get('https://my-unique-shop-backend-c2411867a870.herokuapp.com/api/items/?format=json');
             this.items = res.data
         } catch(error) {
             console.log(error)

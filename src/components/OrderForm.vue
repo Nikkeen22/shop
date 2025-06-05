@@ -60,7 +60,7 @@ export default {
           basket: JSON.stringify(this.basket)
         }
         axios
-          .post('http://127.0.0.1:8000/api/order-add/', data)
+          .post('https://my-unique-shop-backend-c2411867a870.herokuapp.com/api/order-add/', data)
           .then(res => {
             this.error = res.data.result || 'Замовлення прийнято!'
             this.clearBasket() // 🧹 очищення корзини
